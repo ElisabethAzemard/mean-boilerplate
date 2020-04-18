@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "dev": "cd angularClient && ng build --output-path ../www --watch",
+    "build": "cd angularClient && ng build --prod --output-path ../www"
   },
   "keywords": [],
   "author": "",
